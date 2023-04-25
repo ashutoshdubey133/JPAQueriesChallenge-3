@@ -77,5 +77,9 @@ public class MainService {
 	public List<String> getCoursesNameByStudentId(int id) {
 		return courseRepository.getCoursesByStudentId(this.getStudentById(id));
 	}
+
+	public double getAverageGradesOfStudent(int id) {
+		return gradeRepository.getAverageGradesOfStudent(id);
+	}
 	
 }

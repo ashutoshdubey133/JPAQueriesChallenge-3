@@ -50,4 +50,11 @@ public class MainController {
 	public List<String> getCoursesNameByStudentID(@PathVariable int id){
 		return service.getCoursesNameByStudentId(id);
 	}
+	
+	@GetMapping("/student/{id}/averageGrade")
+	public double getAverageGradesOfAllStudents(@PathVariable int id) {
+		return service.getAverageGradesOfStudent(id);
+	}
+	
+	
 }
